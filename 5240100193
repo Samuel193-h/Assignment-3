@@ -1,0 +1,52 @@
+1. Reversing a String
+```
+def reverse_string(s):
+    return s[::-1]
+
+s = "Programming"
+print("Reversed string:", reverse_string(s))
+```
+
+2. Printing Initials
+```
+def print_initials(full_name):
+    names = full_name.split()
+    initials = ".".join(name[0].upper() for name in names)
+    return initials + "."
+
+full_name = input("Enter your full name: ")
+print("Initials:", print_initials(full_name))
+```
+
+3. Checking Palindrome
+```
+def is_palindrome(s):
+    s = s.lower()
+    return s == s[::-1]
+
+s = input("Enter a string: ")
+if is_palindrome(s):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+```
+
+4. Counting Words
+```
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+
+sentence = input("Enter a sentence: ")
+print("Number of words:", count_words(sentence))
+```
+
+5. Replacing String
+```
+def replace_string(s):
+    return s.replace("is", "was")
+
+s = "This is a string and it is an example."
+print("Original string:", s)
+print("Modified string:", replace_string(s))
+```
